@@ -14,30 +14,62 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-start-date">Start Date</label>
-                        <input type="date" class="form-control" id="new-start-date">
+                        <label for="new-given-date">Given Date</label>
+                        <input type="date" class="form-control" id="new-given-date">
                     </div>
                 </div>
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-end-date">End Date</label>
-                        <input type="date" class="form-control" id="new-end-date">
+                        <label for="new-due-date">Due Date</label>
+                        <input type="date" class="form-control" id="new-due-date">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
-                        <label for="new-task">Task</label>
-                        <input type="text" class="form-control" id="new-task" placeholder="Task">
+                        <label for="new-assignment">Assignment</label>
+                        <input type="text" class="form-control" id="new-assignment" placeholder="Assignment">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-type">Assignment Type</label>
+                        <select name="assignment-type" id="new-type" class="form-control">
+                            <option>Homework</option>
+                            <option>Classwork</option>
+                            <option>Quiz</option>
+                            <option>Unit Test</option>
+                            <option>Project/Report</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="score">Score</label>
+                        <input type="number" class="form-control" id="new-score" placeholder="Score">
                     </div>
                 </div>
             </div>
             <div>
-                <button id="add" class="btn btn-primary form-control">Create</button>
+                <button id="add" class="btn btn-primary">Create</button>
             </div>
         </div>
     </div><br>
+    <table id="list" class="table table-dark table striped">
+        <tr>
+            <th>Assignment</th>
+            <th>Assignment Type</th>
+            <th>Date Given</th>
+            <th>Due Date</th>
+            <th>Score</th>
+            <th>Actions</th>
+        </tr>
+    </table>
 
 
 
@@ -47,7 +79,7 @@
 
 
 
-
+    <script src="list.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
